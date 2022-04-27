@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// import section
+import "./App.css";
+import NavigationBar from "./components/NavigationBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import ContactMe from "./components/ContactMe";
+import Projects from "./components/Projects";
 
-function App() {
+
+export default function App() {
+  // vanilla js section
+
+  // jsx section
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavigationBar />
+      <Home/>
+      <About/>
+      <Projects/>
+      <ContactMe/>
+       
     </div>
   );
 }
-
-export default App;
